@@ -15,6 +15,11 @@ pregunta_d = "PRIMERA parte fundamental en la vida de una variable. Este proceso
 pregunta_e = "Tipo de dato numero donde no se tienen en cuenta la parte decimal, es catellano"
 pregunta_f = "Estado logico consecuencia de no cumplirse una preposición"
 pregunta_g = "Contiene \"G\", tipo de operador donde se comparan valores booleanos y el resultado es logico"
+pregunta_h = "Contiene \"H\", nombre de uno de los IDE de PYTHON"
+pregunta_i = "Estructura selectiva simple, en ingles"
+pregunta_j = "Lenguaje de programacion orientado a objetos"
+pregunta_k = "Sentencia imterrumpir, se utiliza para terminar un bucle en un lugar determinado. En ingles"
+pregunta_l = "Contiene \"L\", Acción de transformar un programa desde lenguaje de programacion a codigo maquina"
 # A CONTINUACION SE DEPOSITAN LAS RESPUESTAS
 respuesta_a = "algoritmo".lower()
 respuesta_b = "booleano".lower()
@@ -23,6 +28,11 @@ respuesta_d = "declaracion".lower()
 respuesta_e = "entero".lower()
 respuesta_f = "falso".lower()
 respuesta_g = "logico".lower()
+respuesta_h = "pycharm".lower()
+respuesta_i = "if".lower()
+respuesta_j = "java".lower()
+respuesta_k = "break".lower()
+respuesta_l = "compilar".lower()
 entrada = input("Ingrese \"0\" para obtener una letra: ").upper()
 resp_correctas = 0
 resp_incorrectas = 0
@@ -229,10 +239,10 @@ while entrada == "0":
                     entrada = "1"
     if letra == "h":
         print(f"La letra salida al azar es \"{letra}\"".upper())
-        print("La Pregunta es: ")
+        print(f"La Pregunta es:{pregunta_h}")
         # FALTA PREGUNTA
         respuesta = input("Ingrese su respuesta: ").lower()
-        if respuesta == "h":  # FALTA CORREGIR LA CONDICION
+        if respuesta == respuesta_h:
             resp_correctas = (resp_correctas + 1)
             print("La respuesta es correcta".upper())
             sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
@@ -258,10 +268,9 @@ while entrada == "0":
                     entrada = "1"
     if letra == "i":
         print(f"La letra salida al azar es \"{letra}\"".upper())
-        print("La Pregunta es: ")
-        # FALTA PREGUNTA
+        print(f"La Pregunta es:{pregunta_i}")
         respuesta = input("Ingrese su respuesta: ").lower()
-        if respuesta == "i":  # FALTA CORREGIR LA CONDICION
+        if respuesta == respuesta_i:
             resp_correctas = (resp_correctas + 1)
             print("La respuesta es correcta".upper())
             sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
@@ -287,10 +296,9 @@ while entrada == "0":
                     entrada = "1"
     if letra == "j":
         print(f"La letra salida al azar es \"{letra}\"".upper())
-        print("La Pregunta es: ")
-        # FALTA PREGUNTA
+        print(f"La Pregunta es:{pregunta_j}")
         respuesta = input("Ingrese su respuesta: ").lower()
-        if respuesta == "j":  # FALTA CORREGIR LA CONDICION
+        if respuesta == respuesta_j:
             resp_correctas = (resp_correctas + 1)
             print("La respuesta es correcta".upper())
             sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
@@ -316,10 +324,9 @@ while entrada == "0":
                     entrada = "1"
     if letra == "k":
         print(f"La letra salida al azar es \"{letra}\"".upper())
-        print("La Pregunta es: ")
-        # FALTA PREGUNTA
+        print(f"La Pregunta es:{pregunta_k}")
         respuesta = input("Ingrese su respuesta: ").lower()
-        if respuesta == "k":  # FALTA CORREGIR LA CONDICION
+        if respuesta == respuesta_k:
             resp_correctas = (resp_correctas + 1)
             print("La respuesta es correcta".upper())
             sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
@@ -345,10 +352,9 @@ while entrada == "0":
                     entrada = "1"
     if letra == "l":
         print(f"La letra salida al azar es \"{letra}\"".upper())
-        print("La Pregunta es: ")
-        # FALTA PREGUNTA
+        print(f"La Pregunta es:{pregunta_l}")
         respuesta = input("Ingrese su respuesta: ").lower()
-        if respuesta == "l":  # FALTA CORREGIR LA CONDICION
+        if respuesta == respuesta_l:
             resp_correctas = (resp_correctas + 1)
             print("La respuesta es correcta".upper())
             sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
