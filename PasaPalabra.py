@@ -2,6 +2,20 @@ import string
 from typing import List
 import random
 
+
+def sigue_el_jugo(sigue_jugando):
+    if sigue_jugando == "5":
+        print("Excelente ! Sigamos jugando")
+        entrada = input("Ingrese \"0\" para obtener una letra: ").upper()
+        return entrada
+    else:
+        if sigue_jugando == "9":
+            print(
+                f"Usted a finalizado el juego \ncantidad de respuestas correctas:{resp_correctas}\ncantidad de respuestas incorrectas:{resp_incorrectas}".upper())
+            entrada = "1"
+            return entrada
+
+
 letra = str
 # print(string.ascii_uppercase)
 abecedario = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u",
@@ -10,7 +24,7 @@ abecedario = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "
 # A CONTINUACION SE DEPOSITAN LAS PREGUNTAS
 pregunta_a = "Secuencia de pasos ordenados que describen un proceso"
 pregunta_b = "Tipo de dato logico"
-pregunta_c = "Número o caracter que se utiliza como un valor y no cambiara al menos dentro de un algoritmo "
+pregunta_c = "Número o caracter que se utiliza como un valor y no cambiara al menos dentro de un algoritmo"
 pregunta_d = "PRIMERA parte fundamental en la vida de una variable. Este proceso se aconseja hacerlo al inicio del algoritmo"
 pregunta_e = "Tipo de dato numero donde no se tienen en cuenta la parte decimal, es catellano"
 pregunta_f = "Estado logico consecuencia de no cumplirse una preposición"
@@ -49,26 +63,12 @@ while entrada == "0":
             resp_correctas = (resp_correctas + 1)
             print("La respuesta es correcta".upper())
             sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
-            if sigue_jugando == "5":
-                print("Excelente ! Sigamos jugando")
-                entrada = input("Ingrese \"0\" para obtener una letra: ").upper()
-            else:
-                if sigue_jugando == "9":
-                    print(
-                        f"Usted a finalizado el juego \ncantidad de respuestas correctas:{resp_correctas}\ncantidad de respuestas incorrectas:{resp_incorrectas}".upper())
-                    entrada = "1"
+            entrada = sigue_el_jugo(sigue_jugando)         #SE LLAMA A LA FUNCION QUE VERIFICA SI SIGUE O NO EL JUEGO
         else:
             resp_incorrectas = (resp_incorrectas + 1)
             print("La respuesta es incorrecta".upper())
             sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
-            if sigue_jugando == "5":
-                print("Excelente ! Sigamos jugando")
-                entrada = input("Ingrese \"0\" para obtener una letra: ").upper()
-            else:
-                if sigue_jugando == "9":
-                    print(
-                        f"Usted a finalizado el juego \ncantidad de respuestas correctas:{resp_correctas}\ncantidad de respuestas incorrectas:{resp_incorrectas}".upper())
-                    entrada = "1"
+            entrada = sigue_el_jugo(sigue_jugando)
     if letra == "b":
         print(f"La letra salida al azar es \"{letra}\"".upper())
         print(f"La Pregunta es:{pregunta_b}")
@@ -77,26 +77,12 @@ while entrada == "0":
             resp_correctas = (resp_correctas + 1)
             print("La respuesta es correcta".upper())
             sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
-            if sigue_jugando == "5":
-                print("Excelente ! Sigamos jugando")
-                entrada = input("Ingrese \"0\" para obtener una letra: ").upper()
-            else:
-                if sigue_jugando == "9":
-                    print(
-                        f"Usted a finalizado el juego \ncantidad de respuestas correctas:{resp_correctas}\ncantidad de respuestas incorrectas:{resp_incorrectas}".upper())
-                    entrada = "1"
+            entrada = sigue_el_jugo(sigue_jugando)
         else:
             resp_incorrectas = (resp_incorrectas + 1)
             print("La respuesta es incorrecta".upper())
             sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
-            if sigue_jugando == "5":
-                print("Excelente ! Sigamos jugando")
-                entrada = input("Ingrese \"0\" para obtener una letra: ").upper()
-            else:
-                if sigue_jugando == "9":
-                    print(
-                        f"Usted a finalizado el juego \ncantidad de respuestas correctas:{resp_correctas}\ncantidad de respuestas incorrectas:{resp_incorrectas}".upper())
-                    entrada = "1"
+            entrada = sigue_el_jugo(sigue_jugando)
     if letra == "c":
         print(f"La letra salida al azar es \"{letra}\"".upper())
         print("La Pregunta es: ")
@@ -106,26 +92,12 @@ while entrada == "0":
             resp_correctas = (resp_correctas + 1)
             print("La respuesta es correcta".upper())
             sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
-            if sigue_jugando == "5":
-                print("Excelente ! Sigamos jugando")
-                entrada = input("Ingrese \"0\" para obtener una letra: ").upper()
-            else:
-                if sigue_jugando == "9":
-                    print(
-                        f"Usted a finalizado el juego \ncantidad de respuestas correctas:{resp_correctas}\ncantidad de respuestas incorrectas:{resp_incorrectas}".upper())
-                    entrada = "1"
+            entrada = sigue_el_jugo(sigue_jugando)
         else:
             resp_incorrectas = (resp_incorrectas + 1)
             print("La respuesta es incorrecta".upper())
             sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
-            if sigue_jugando == "5":
-                print("Excelente ! Sigamos jugando")
-                entrada = input("Ingrese \"0\" para obtener una letra: ").upper()
-            else:
-                if sigue_jugando == "9":
-                    print(
-                        f"Usted a finalizado el juego \ncantidad de respuestas correctas:{resp_correctas}\ncantidad de respuestas incorrectas:{resp_incorrectas}".upper())
-                    entrada = "1"
+            entrada = sigue_el_jugo(sigue_jugando)
     if letra == "d":
         print(f"La letra salida al azar es \"{letra}\"".upper())
         print(f"La Pregunta es:{pregunta_d}")
@@ -134,26 +106,12 @@ while entrada == "0":
             resp_correctas = (resp_correctas + 1)
             print("La respuesta es correcta".upper())
             sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
-            if sigue_jugando == "5":
-                print("Excelente ! Sigamos jugando")
-                entrada = input("Ingrese \"0\" para obtener una letra: ").upper()
-            else:
-                if sigue_jugando == "9":
-                    print(
-                        f"Usted a finalizado el juego \ncantidad de respuestas correctas:{resp_correctas}\ncantidad de respuestas incorrectas:{resp_incorrectas}".upper())
-                    entrada = "1"
+            entrada = sigue_el_jugo(sigue_jugando)
         else:
             resp_incorrectas = (resp_incorrectas + 1)
             print("La respuesta es incorrecta".upper())
             sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
-            if sigue_jugando == "5":
-                print("Excelente ! Sigamos jugando")
-                entrada = input("Ingrese \"0\" para obtener una letra: ").upper()
-            else:
-                if sigue_jugando == "9":
-                    print(
-                        f"Usted a finalizado el juego \ncantidad de respuestas correctas:{resp_correctas}\ncantidad de respuestas incorrectas:{resp_incorrectas}".upper())
-                    entrada = "1"
+            entrada = sigue_el_jugo(sigue_jugando)
     if letra == "e":
         print(f"La letra salida al azar es \"{letra}\"".upper())
         print(f"La Pregunta es:{pregunta_e}")
@@ -162,26 +120,12 @@ while entrada == "0":
             resp_correctas = (resp_correctas + 1)
             print("La respuesta es correcta".upper())
             sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
-            if sigue_jugando == "5":
-                print("Excelente ! Sigamos jugando")
-                entrada = input("Ingrese \"0\" para obtener una letra: ").upper()
-            else:
-                if sigue_jugando == "9":
-                    print(
-                        f"Usted a finalizado el juego \ncantidad de respuestas correctas:{resp_correctas}\ncantidad de respuestas incorrectas:{resp_incorrectas}".upper())
-                    entrada = "1"
+            entrada = sigue_el_jugo(sigue_jugando)
         else:
             resp_incorrectas = (resp_incorrectas + 1)
             print("La respuesta es incorrecta".upper())
             sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
-            if sigue_jugando == "5":
-                print("Excelente ! Sigamos jugando")
-                entrada = input("Ingrese \"0\" para obtener una letra: ").upper()
-            else:
-                if sigue_jugando == "9":
-                    print(
-                        f"Usted a finalizado el juego \ncantidad de respuestas correctas:{resp_correctas}\ncantidad de respuestas incorrectas:{resp_incorrectas}".upper())
-                    entrada = "1"
+            entrada = sigue_el_jugo(sigue_jugando)
     if letra == "f":
         print(f"La letra salida al azar es \"{letra}\"".upper())
         print(f"La Pregunta es:{pregunta_f}")
@@ -190,25 +134,12 @@ while entrada == "0":
             resp_correctas = (resp_correctas + 1)
             print("La respuesta es correcta".upper())
             sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
-            if sigue_jugando == "5":
-                print("Excelente ! Sigamos jugando")
-                entrada = input("Ingrese \"0\" para obtener una letra: ").upper()
-            else:
-                if sigue_jugando == "9":
-                    print(f"Usted a finalizado el juego \ncantidad de respuestas correctas:{resp_correctas}\ncantidad de respuestas incorrectas:{resp_incorrectas}".upper())
-                    entrada = "1"
+            entrada = sigue_el_jugo(sigue_jugando)
         else:
             resp_incorrectas = (resp_incorrectas + 1)
             print("La respuesta es incorrecta".upper())
             sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
-            if sigue_jugando == "5":
-                print("Excelente ! Sigamos jugando")
-                entrada = input("Ingrese \"0\" para obtener una letra: ").upper()
-            else:
-                if sigue_jugando == "9":
-                    print(
-                        f"Usted a finalizado el juego \ncantidad de respuestas correctas:{resp_correctas}\ncantidad de respuestas incorrectas:{resp_incorrectas}".upper())
-                    entrada = "1"
+            entrada = sigue_el_jugo(sigue_jugando)
     if letra == "g":
         print(f"La letra salida al azar es \"{letra}\"".upper())
         print(f"La Pregunta es:{pregunta_g}")
@@ -217,55 +148,26 @@ while entrada == "0":
             resp_correctas = (resp_correctas + 1)
             print("La respuesta es correcta".upper())
             sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
-            if sigue_jugando == "5":
-                print("Excelente ! Sigamos jugando")
-                entrada = input("Ingrese \"0\" para obtener una letra: ").upper()
-            else:
-                if sigue_jugando == "9":
-                    print(
-                        f"Usted a finalizado el juego \ncantidad de respuestas correctas:{resp_correctas}\ncantidad de respuestas incorrectas:{resp_incorrectas}".upper())
-                    entrada = "1"
+            entrada = sigue_el_jugo(sigue_jugando)
         else:
             resp_incorrectas = (resp_incorrectas + 1)
             print("La respuesta es incorrecta".upper())
             sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
-            if sigue_jugando == "5":
-                print("Excelente ! Sigamos jugando")
-                entrada = input("Ingrese \"0\" para obtener una letra: ").upper()
-            else:
-                if sigue_jugando == "9":
-                    print(
-                        f"Usted a finalizado el juego \ncantidad de respuestas correctas:{resp_correctas}\ncantidad de respuestas incorrectas:{resp_incorrectas}".upper())
-                    entrada = "1"
+            entrada = sigue_el_jugo(sigue_jugando)
     if letra == "h":
         print(f"La letra salida al azar es \"{letra}\"".upper())
         print(f"La Pregunta es:{pregunta_h}")
-        # FALTA PREGUNTA
         respuesta = input("Ingrese su respuesta: ").lower()
         if respuesta == respuesta_h:
             resp_correctas = (resp_correctas + 1)
             print("La respuesta es correcta".upper())
             sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
-            if sigue_jugando == "5":
-                print("Excelente ! Sigamos jugando")
-                entrada = input("Ingrese \"0\" para obtener una letra: ").upper()
-            else:
-                if sigue_jugando == "9":
-                    print(
-                        f"Usted a finalizado el juego \ncantidad de respuestas correctas:{resp_correctas}\ncantidad de respuestas incorrectas:{resp_incorrectas}".upper())
-                    entrada = "1"
+            entrada = sigue_el_jugo(sigue_jugando)
         else:
             resp_incorrectas = (resp_incorrectas + 1)
             print("La respuesta es incorrecta".upper())
             sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
-            if sigue_jugando == "5":
-                print("Excelente ! Sigamos jugando")
-                entrada = input("Ingrese \"0\" para obtener una letra: ").upper()
-            else:
-                if sigue_jugando == "9":
-                    print(
-                        f"Usted a finalizado el juego \ncantidad de respuestas correctas:{resp_correctas}\ncantidad de respuestas incorrectas:{resp_incorrectas}".upper())
-                    entrada = "1"
+            entrada = sigue_el_jugo(sigue_jugando)
     if letra == "i":
         print(f"La letra salida al azar es \"{letra}\"".upper())
         print(f"La Pregunta es:{pregunta_i}")
@@ -274,26 +176,12 @@ while entrada == "0":
             resp_correctas = (resp_correctas + 1)
             print("La respuesta es correcta".upper())
             sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
-            if sigue_jugando == "5":
-                print("Excelente ! Sigamos jugando")
-                entrada = input("Ingrese \"0\" para obtener una letra: ").upper()
-            else:
-                if sigue_jugando == "9":
-                    print(
-                        f"Usted a finalizado el juego \ncantidad de respuestas correctas:{resp_correctas}\ncantidad de respuestas incorrectas:{resp_incorrectas}".upper())
-                    entrada = "1"
+            entrada = sigue_el_jugo(sigue_jugando)
         else:
             resp_incorrectas = (resp_incorrectas + 1)
             print("La respuesta es incorrecta".upper())
             sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
-            if sigue_jugando == "5":
-                print("Excelente ! Sigamos jugando")
-                entrada = input("Ingrese \"0\" para obtener una letra: ").upper()
-            else:
-                if sigue_jugando == "9":
-                    print(
-                        f"Usted a finalizado el juego \ncantidad de respuestas correctas:{resp_correctas}\ncantidad de respuestas incorrectas:{resp_incorrectas}".upper())
-                    entrada = "1"
+            entrada = sigue_el_jugo(sigue_jugando)
     if letra == "j":
         print(f"La letra salida al azar es \"{letra}\"".upper())
         print(f"La Pregunta es:{pregunta_j}")
@@ -302,26 +190,12 @@ while entrada == "0":
             resp_correctas = (resp_correctas + 1)
             print("La respuesta es correcta".upper())
             sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
-            if sigue_jugando == "5":
-                print("Excelente ! Sigamos jugando")
-                entrada = input("Ingrese \"0\" para obtener una letra: ").upper()
-            else:
-                if sigue_jugando == "9":
-                    print(
-                        f"Usted a finalizado el juego \ncantidad de respuestas correctas:{resp_correctas}\ncantidad de respuestas incorrectas:{resp_incorrectas}".upper())
-                    entrada = "1"
+            entrada = sigue_el_jugo(sigue_jugando)
         else:
             resp_incorrectas = (resp_incorrectas + 1)
             print("La respuesta es incorrecta".upper())
             sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
-            if sigue_jugando == "5":
-                print("Excelente ! Sigamos jugando")
-                entrada = input("Ingrese \"0\" para obtener una letra: ").upper()
-            else:
-                if sigue_jugando == "9":
-                    print(
-                        f"Usted a finalizado el juego \ncantidad de respuestas correctas:{resp_correctas}\ncantidad de respuestas incorrectas:{resp_incorrectas}".upper())
-                    entrada = "1"
+            entrada = sigue_el_jugo(sigue_jugando)
     if letra == "k":
         print(f"La letra salida al azar es \"{letra}\"".upper())
         print(f"La Pregunta es:{pregunta_k}")
@@ -330,26 +204,12 @@ while entrada == "0":
             resp_correctas = (resp_correctas + 1)
             print("La respuesta es correcta".upper())
             sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
-            if sigue_jugando == "5":
-                print("Excelente ! Sigamos jugando")
-                entrada = input("Ingrese \"0\" para obtener una letra: ").upper()
-            else:
-                if sigue_jugando == "9":
-                    print(
-                        f"Usted a finalizado el juego \ncantidad de respuestas correctas:{resp_correctas}\ncantidad de respuestas incorrectas:{resp_incorrectas}".upper())
-                    entrada = "1"
+            entrada = sigue_el_jugo(sigue_jugando)
         else:
             resp_incorrectas = (resp_incorrectas + 1)
             print("La respuesta es incorrecta".upper())
             sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
-            if sigue_jugando == "5":
-                print("Excelente ! Sigamos jugando")
-                entrada = input("Ingrese \"0\" para obtener una letra: ").upper()
-            else:
-                if sigue_jugando == "9":
-                    print(
-                        f"Usted a finalizado el juego \ncantidad de respuestas correctas:{resp_correctas}\ncantidad de respuestas incorrectas:{resp_incorrectas}".upper())
-                    entrada = "1"
+            entrada = sigue_el_jugo(sigue_jugando)
     if letra == "l":
         print(f"La letra salida al azar es \"{letra}\"".upper())
         print(f"La Pregunta es:{pregunta_l}")
@@ -358,23 +218,9 @@ while entrada == "0":
             resp_correctas = (resp_correctas + 1)
             print("La respuesta es correcta".upper())
             sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
-            if sigue_jugando == "5":
-                print("Excelente ! Sigamos jugando")
-                entrada = input("Ingrese \"0\" para obtener una letra: ").upper()
-            else:
-                if sigue_jugando == "9":
-                    print(
-                        f"Usted a finalizado el juego \ncantidad de respuestas correctas:{resp_correctas}\ncantidad de respuestas incorrectas:{resp_incorrectas}".upper())
-                    entrada = "1"
+            entrada = sigue_el_jugo(sigue_jugando)
         else:
             resp_incorrectas = (resp_incorrectas + 1)
             print("La respuesta es incorrecta".upper())
             sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
-            if sigue_jugando == "5":
-                print("Excelente ! Sigamos jugando")
-                entrada = input("Ingrese \"0\" para obtener una letra: ").upper()
-            else:
-                if sigue_jugando == "9":
-                    print(
-                        f"Usted a finalizado el juego \ncantidad de respuestas correctas:{resp_correctas}\ncantidad de respuestas incorrectas:{resp_incorrectas}".upper())
-                    entrada = "1"
+            entrada = sigue_el_jugo(sigue_jugando)
