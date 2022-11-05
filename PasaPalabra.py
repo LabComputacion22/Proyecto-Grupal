@@ -1,5 +1,3 @@
-import string
-from typing import List
 import random
 
 
@@ -38,6 +36,10 @@ pregunta_m = "Contiene \"M\": Software encargado de transformar un lenguaje de a
 pregunta_n = "Contiene \"N\": Subprgrama que se define y se puede llamar cada vez que lo necesitemos en el codigo"
 pregunta_o = "Contiene \"O\": Parte de todo algoritmo compuesta por el conjunto de instrucciones"
 pregunta_p = "Respresentacion escrita de instrucciones, previa a desarrollar el algoritmo"
+pregunta_q = "Evolución del codigo de barras. Tambien llamado codigo de barras bidimensional"
+pregunta_r = "Tipo de estructura donde un conjunto de instrucciones se repiten un número determinado de veces o hasta cumplirse una condición"
+pregunta_s = "Secuancia de dato utilizada para representar texto. En ingles"
+pregunta_t = ""
 # A CONTINUACION SE DEPOSITAN LAS RESPUESTAS
 respuesta_a = "algoritmo".lower()
 respuesta_b = "booleano".lower()
@@ -55,6 +57,9 @@ respuesta_m = "compilador".lower()
 respuesta_n = "funcion".lower()
 respuesta_o = "proceso".lower()
 respuesta_p = "pseudocodigo".lower()
+respuesta_q = "qr".lower()
+respuesta_r = "repetitiva".lower()
+respuesta_s = "string".lower()
 entrada = input("Ingrese \"0\" para obtener una letra: ").upper()
 resp_correctas = 0
 resp_incorrectas = 0
@@ -288,11 +293,53 @@ while entrada == "0":
             print("La respuesta es incorrecta".upper())
             sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
             entrada = sigue_el_jugo(sigue_jugando)
-    if letra == "l":
+    if letra == "q":
         print(f"La letra salida al azar es \"{letra}\"".upper())
-        print(f"La Pregunta es:{pregunta_l}")
+        print(f"La Pregunta es:{pregunta_q}")
         respuesta = input("Ingrese su respuesta: ").lower()
-        if respuesta == respuesta_l:
+        if respuesta == respuesta_q:
+            resp_correctas = (resp_correctas + 1)
+            print("La respuesta es correcta".upper())
+            sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
+            entrada = sigue_el_jugo(sigue_jugando)
+        else:
+            resp_incorrectas = (resp_incorrectas + 1)
+            print("La respuesta es incorrecta".upper())
+            sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
+            entrada = sigue_el_jugo(sigue_jugando)
+    if letra == "r":
+        print(f"La letra salida al azar es \"{letra}\"".upper())
+        print(f"La Pregunta es:{pregunta_r}")
+        respuesta = input("Ingrese su respuesta: ").lower()
+        if respuesta == respuesta_r:
+            resp_correctas = (resp_correctas + 1)
+            print("La respuesta es correcta".upper())
+            sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
+            entrada = sigue_el_jugo(sigue_jugando)
+        else:
+            resp_incorrectas = (resp_incorrectas + 1)
+            print("La respuesta es incorrecta".upper())
+            sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
+            entrada = sigue_el_jugo(sigue_jugando)
+    if letra == "s":
+        print(f"La letra salida al azar es \"{letra}\"".upper())
+        print(f"La Pregunta es:{pregunta_s}")
+        respuesta = input("Ingrese su respuesta: ").lower()
+        if respuesta == respuesta_s:
+            resp_correctas = (resp_correctas + 1)
+            print("La respuesta es correcta".upper())
+            sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
+            entrada = sigue_el_jugo(sigue_jugando)
+        else:
+            resp_incorrectas = (resp_incorrectas + 1)
+            print("La respuesta es incorrecta".upper())
+            sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
+            entrada = sigue_el_jugo(sigue_jugando)
+    if letra == "r":
+        print(f"La letra salida al azar es \"{letra}\"".upper())
+        print(f"La Pregunta es:{pregunta_r}")
+        respuesta = input("Ingrese su respuesta: ").lower()
+        if respuesta == respuesta_r:
             resp_correctas = (resp_correctas + 1)
             print("La respuesta es correcta".upper())
             sigue_jugando = input("¿Desea continuar jugando?\nIngrese \"5\" para continuar o \"9\" para terminar: ".upper())
